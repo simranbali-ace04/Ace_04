@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 const ShapeGrid = ({
   direction = "diagonal",
   speed = 0.3,
-  borderColor = "#454040",
+  borderColor = "#212020",
   squareSize = 20,
   shape = "hexagon",
 }) => {
