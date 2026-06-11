@@ -2,7 +2,7 @@ import React from "react";
 import ShapeGrid from "./components/ShapeGrid";
 import HeroDarkImg from "./components/HeroDarkImg";
 import Navbar from "./components/Navbar";
-import Hero from "./Hero";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
@@ -21,7 +21,7 @@ const App = () => {
 
         <div className="w-3/5 min-h-screen relative z-10 rounded-2xl border border-zinc-800 bg-black/45 text-white">
           <HeroDarkImg />
-          <Hero/>
+          <Hero />
         </div>
       </div>
     </div>
