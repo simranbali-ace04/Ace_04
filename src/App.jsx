@@ -2,6 +2,7 @@ import React from "react";
 import ShapeGrid from "./components/ShapeGrid";
 import HeroDarkImg from "./components/HeroDarkImg";
 import Navbar from "./components/Navbar";
+import Hero from "./Hero";
 
 const App = () => {
   return (
@@ -16,12 +17,12 @@ const App = () => {
         />
       </div>
       <div className="flex flex-col justify-center items-center gap-2 p-2">
-      
         <Navbar />
 
-      <div className="w-3/5 min-h-screen relative z-10 rounded-2xl border border-zinc-800 bg-black/45 text-white">
-        <HeroDarkImg />
-      </div>
+        <div className="w-3/5 min-h-screen relative z-10 rounded-2xl border border-zinc-800 bg-black/45 text-white">
+          <HeroDarkImg />
+          <Hero/>
+        </div>
       </div>
     </div>
   );
