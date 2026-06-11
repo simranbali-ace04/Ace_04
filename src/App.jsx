@@ -6,7 +6,7 @@ import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div className="absolute min-h-screen bg-black flex items-center justify-center">
+    <div className="min-h-screen bg-black">
       <div className="fixed inset-0 z-0">
         <ShapeGrid
           shape="hexagon"
@@ -16,10 +16,9 @@ const App = () => {
           direction="diagonal"
         />
       </div>
-      <div className="flex flex-col justify-center items-center gap-2 p-2">
+      <div className="relative z-10 flex flex-col justify-center items-center gap-2 p-2 min-h-screen">
         <Navbar />
-
-        <div className="w-3/5 min-h-screen relative z-10 rounded-2xl border border-zinc-800 bg-black/45 text-white">
+        <div className="w-full sm:w-4/5 lg:w-3/5 rounded-2xl border border-zinc-800 bg-black/45 text-white">
           <HeroDarkImg />
           <Hero />
         </div>
