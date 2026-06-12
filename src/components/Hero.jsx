@@ -69,6 +69,7 @@ const Hero = () => {
           <p className="font-light text-zinc-300 text-sm sm:text-base">
             Turning curiosity into code and ideas into impactful digital
             experiences.
+            Always learning, always building, and always chasing the next challenge.
           </p>
 
           <div className="flex flex-row flex-wrap gap-4 items-center justify-center sm:justify-start">

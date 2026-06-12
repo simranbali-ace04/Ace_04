@@ -3,6 +3,7 @@ import ShapeGrid from "./components/ShapeGrid";
 import HeroDarkImg from "./components/HeroDarkImg";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 
 const App = () => {
   return (
@@ -16,11 +17,14 @@ const App = () => {
           direction="diagonal"
         />
       </div>
-      <div className="relative z-10 flex flex-col justify-center items-center gap-2 p-2 min-h-screen">
+      <div className="relative z-10 flex flex-col justify-center items-center gap-5 p-2 min-h-screen">
         <Navbar />
         <div className="w-full sm:w-4/5 lg:w-3/5 rounded-2xl border border-zinc-800 bg-black/45 text-white">
           <HeroDarkImg />
+          <div className="flex flex-col gap-3">
           <Hero />
+          <About />
+          </div>
         </div>
       </div>
     </div>
