@@ -38,8 +38,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 text-center sm:text-left w-full min-w-0">
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif text-olive-300 sm:mt-4 leading-tight">
+        <div className="flex flex-col gap-3 text-center sm:text-left w-full min-w-0 font-heading">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl text-olive-300 sm:mt-4 font-semibold leading-tight">
             Simran Bali{" "}
             <span className="text-lg sm:text-2xl text-zinc-400 italic block sm:inline">
               aka Ace
