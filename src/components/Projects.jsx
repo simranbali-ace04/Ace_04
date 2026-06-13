@@ -1,18 +1,71 @@
-import React from 'react'
-import ProjectsCard from './ProjectsCard'
+import React from "react";
+import ProjectsCard from "./ProjectsCard";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
+const projects = [
+  {
+    name: "GitLook",
+    description: [
+      "Built a responsive web application to fetch and display developer profiles and repository metrics using the GitHub REST API",
+      "Developed reusable React components with dynamic state management for profiles, repositories, and error handling",
+      "Configured Vite and ESLint to optimize build performance and maintain clean, consistent code quality",
+    ],
+    techStack: ["React", "Tailwind CSS", "REST API"],
+    link: "https://gitlook-ace.vercel.app",
+    gihub: "https://github.com/simranbali-ace04/GitLook",
+  },
+  {
+    name: "VaultWise",
+    description: [
+      "Built a responsive password vault interface using React and Vite to help users securely organize and view account credentials.",
+      " Structured the UI using localized sub-components like newCredentials and passwordCard to separate entry forms from the credential list displays.",
+      "Utilized Tailwind CSS to implement utility-first layouts, ensuring a consistent user experience across mobile and desktop devices.",
+    ],
+    techStack: ["React", "Tailwind CSS", "Local Storage"],
+    link: "https://vault-wise-ace.vercel.app/",
+    github: "https://github.com/simranbali-ace04/VaultWise",
+  },
+  {
+    name: "ConsentLens",
+    description: [
+      "Secured a Special Mention and ranked in the Top 4 teams at Code Wizards 2.0 (SRM Ghaziabad) for building a patient-friendly healthcare application.",
+      "Designed and developed the entire frontend using Next.js and Tailwind CSS, creating a clean landing page and easy-to-use dashboards for doctors and patients.",
+      "Built simple, interactive user forms for collecting patient consent and next-of-kin (kin's) consent to streamline hospital onboarding workflows.",
+    ],
+    techStack: ["Next.js", "Gemini API", "Supabase", "Tailwind CSS", "Node.js"],
+    link: "https://consentlens-xi.vercel.app/",
+    github: "https://github.com/simranbali-ace04/consentlens",
+  },
+];
 
 const Projects = () => {
   return (
-    <div className='relative z-10 rounded-xl border border-zinc-800 bg-black/50 text-white px-8 py-4 m-3'>
-        <div className="flex items-center justify-center gap-2">
+    <div className="relative z-10 rounded-xl border border-zinc-800 bg-black/50 text-white px-8 py-4 m-3">
+      <div className="flex items-center justify-center gap-2">
         <h1 className="text-3xl font-heading text-olive-300">PROJECTS</h1>
         <div className="h-px flex-1 bg-linear-to-r from-zinc-700 to-transparent"></div>
       </div>
       <div className="text-md font-light m-4 flex flex-col gap-3 text-olive-200 ">
-      <ProjectsCard />
+        {projects.map((project, idx) => (
+          <ProjectsCard
+            key={idx}
+            name={project.name}
+            description={project.description}
+            techStack={project.techStack}
+            link={project.link}
+            github={project.github}
+          />
+        ))}
+
+        <button className="flex justify-center items-center gap-1.5 font-normal hover:underline mt-2">
+          View Projects{" "}
+          <span>
+            <FaLongArrowAltRight />
+          </span>
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
