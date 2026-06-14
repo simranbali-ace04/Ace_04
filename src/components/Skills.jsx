@@ -94,7 +94,7 @@ const Skills = () => {
           flex items-center gap-1.5
           border border-zinc-700
           text-zinc-300
-
+          cursor-default
           transition-all duration-200
           hover:scale-105
           hover:border-rose-500
