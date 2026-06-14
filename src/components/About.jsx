@@ -16,7 +16,7 @@ const About = () => {
         <div className="h-px flex-1 bg-linear-to-r from-zinc-700 to-transparent"></div>
       </div>
 
-      <div className="text-md font-light m-4 flex flex-col gap-3 text-olive-200 ">
+      <div className="text-md m-4 flex flex-col gap-3 text-olive-200 ">
         <h1>
           I'm <span className="text-rose-500">Simran Bali</span> , a Computer
           Science student who enjoys building things that solve real problems

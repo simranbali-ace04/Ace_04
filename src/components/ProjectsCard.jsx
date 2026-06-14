@@ -2,12 +2,12 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 const ProjectsCard = (props) => {
   return (
-    <div className="bg-black/50 backdrop:blur-md p-3.5 border-2 border-zinc-500 sm:w-full rounded-2xl">
+    <div className="bg-black/50 backdrop:blur-md p-3.5 border border-zinc-500 sm:w-full rounded-2xl">
       <div className="flex items-center justify-between mb-2">
-        <h1 className="font-semibold text-3xl ml-2.5 font-heading">
+        <h1 className="font-semibold text-2xl sm:text-3xl ml-2.5 font-heading">
           {props.name}
         </h1>
-        <div className="flex gap-2 items-center">
+        <div className="flex flex-wrap gap-2 items-center">
           <a
             href={props.link}
             className="flex items-center px-1.5 py-1 rounded-xl text-sm border font-light border-zinc-500 hover:bg-zinc-900"
@@ -28,7 +28,7 @@ const ProjectsCard = (props) => {
           </a>
         </div>
       </div>
-      <ul className="space-y-3 text-zinc-300 text-sm mb-2">
+      <ul className="space-y-3 text-zinc-300 mb-2 font-normal">
         {props.description.map((data, idx) => (
           <li key={idx} className="flex gap-3">
             <span className="text-rose-500">▹</span>
@@ -37,7 +37,7 @@ const ProjectsCard = (props) => {
         ))}
       </ul>
 
-      <div className="flex items-center gap-2 p-2 px-6">
+      <div className="flex flex-wrap gap-2 p-2 px-2">
         {props.techStack.map((tech, idx) => (
           <h1
             key={idx}

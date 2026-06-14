@@ -12,7 +12,7 @@ const projects = [
     ],
     techStack: ["React", "Tailwind CSS", "REST API"],
     link: "https://gitlook-ace.vercel.app",
-    gihub: "https://github.com/simranbali-ace04/GitLook",
+    github: "https://github.com/simranbali-ace04/GitLook",
   },
   {
     name: "VaultWise",
@@ -36,16 +36,17 @@ const projects = [
     link: "https://consentlens-xi.vercel.app/",
     github: "https://github.com/simranbali-ace04/consentlens",
   },
+  
 ];
 
 const Projects = () => {
   return (
-    <div className="relative z-10 rounded-xl border border-zinc-800 bg-black/50 text-white px-8 py-4 m-3">
-      <div className="flex items-center justify-center gap-2">
+    <div id="projects" className=" relative z-10 rounded-xl border border-zinc-800 bg-black/50 text-white px-8 py-4 m-3">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-2">
         <h1 className="text-3xl font-heading text-olive-300">PROJECTS</h1>
         <div className="h-px flex-1 bg-linear-to-r from-zinc-700 to-transparent"></div>
       </div>
-      <div className="text-md font-light m-4 flex flex-col gap-3 text-olive-200 ">
+      <div className="text-sm sm:text-base font-light m-4 flex flex-col gap-3 text-olive-200">
         {projects.map((project, idx) => (
           <ProjectsCard
             key={idx}
@@ -57,12 +58,12 @@ const Projects = () => {
           />
         ))}
 
-        <button className="flex justify-center items-center gap-1.5 font-normal hover:underline mt-2">
+        <a href="https://github.com/simranbali-ace04" className="flex justify-center items-center gap-1.5 font-normal hover:underline mt-2">
           View Projects{" "}
           <span>
             <FaLongArrowAltRight />
           </span>
-        </button>
+        </a>
       </div>
     </div>
   );

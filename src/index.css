@@ -2,4 +2,7 @@
 @theme{
     --font-heading: "Cormorant Garamond", serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 @import "tailwindcss";

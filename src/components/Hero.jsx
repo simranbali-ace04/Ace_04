@@ -38,8 +38,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 text-center sm:text-left w-full min-w-0 font-heading">
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl text-olive-300 sm:mt-4 font-semibold leading-tight">
+        <div className="flex flex-col gap-3 text-center sm:text-left w-full min-w-0">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl text-olive-300 sm:mt-4 font-semibold leading-tight font-heading">
             Simran Bali{" "}
             <span className="text-lg sm:text-2xl text-zinc-400 italic block sm:inline">
               aka Ace
@@ -47,7 +47,7 @@ const Hero = () => {
           </h1>
 
           <div className="flex flex-col sm:flex-row items-center sm:items-center gap-1">
-            <span className="text-olive-300 text-sm sm:text-base sm:px-7">
+            <span className="text-olive-300 text-md sm:text-base sm:px-7">
               20, she/her
             </span>
             <TextType
@@ -66,14 +66,14 @@ const Hero = () => {
             />
           </div>
 
-          <p className="font-light text-zinc-300 text-sm sm:text-base">
+          <p className=" text-zinc-300 text-sm sm:text-base">
             Turning curiosity into code and ideas into impactful digital
             experiences.
             Always learning, always building, and always chasing the next challenge.
           </p>
 
           <div className="flex flex-row flex-wrap gap-4 items-center justify-center sm:justify-start">
-            <button className="bg-rose-800 px-4 py-1.5 rounded-md font-light flex items-center gap-1 active:scale-95 hover:bg-rose-600 text-sm">
+            <button className="bg-rose-800 px-4 py-1.5 rounded-md font-medium flex items-center gap-1 active:scale-95 hover:bg-rose-600 text-sm">
               Resume <IoDocumentTextOutline size={15} />
             </button>
             <div className="flex items-center gap-5">
