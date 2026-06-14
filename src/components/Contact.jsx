@@ -10,14 +10,6 @@ const Contact = () => {
       id="contact"
       className="relative z-10 rounded-xl border border-zinc-800 bg-black/50 text-white px-4 sm:px-6 lg:px-8 py-4 m-3"
     >
-      <div className="flex items-center gap-2 mb-4">
-        <h1 className="text-2xl sm:text-3xl font-heading text-olive-300">
-          CONTACT
-        </h1>
-
-        <div className="h-px flex-1 bg-linear-to-r from-zinc-700 to-transparent"></div>
-      </div>
-
       <h2 className="text-2xl sm:text-4xl font-heading mb-4">Let's Connect.</h2>
 
       <div className="max-w-3xl text-zinc-300 space-y-4 leading-relaxed">
