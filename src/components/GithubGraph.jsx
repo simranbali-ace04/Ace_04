@@ -7,23 +7,20 @@ const GithubGraph = () => {
       id="github"
       className="relative z-10 rounded-xl border border-zinc-800 bg-black/50 text-white px-4 sm:px-6 lg:px-8 py-4 m-3"
     >
-      {/* Heading */}
       <div className="flex items-center gap-2 mb-4">
         <h1 className="text-2xl sm:text-3xl font-heading text-olive-300">
           GITHUB
         </h1>
 
-        <div className="h-px flex-1 bg-gradient-to-r from-zinc-700 to-transparent"></div>
+        <div className="h-px flex-1 bg-linear-to-r from-zinc-700 to-transparent"></div>
       </div>
 
-      {/* Subtitle */}
       <p className="text-xs sm:text-sm text-zinc-400 mb-6">
         Building consistently, one commit at a time.
       </p>
 
-      {/* Graph */}
       <div className="flex justify-center items-center">
-        <div className="origin-center scale-[0.42] xs:scale-[0.55] sm:scale-[0.7] md:scale-[0.85] lg:scale-100">
+        <div className="w-full flex justify-center">
           <GitHubCalendar
             username="simranbali-ace04"
             colorScheme="dark"
@@ -46,21 +43,6 @@ const GithubGraph = () => {
             }}
           />
         </div>
-      </div>
-
-      {/* Legend */}
-      <div className="flex justify-center items-center gap-2 mt-4 text-xs text-zinc-500">
-        <span>Less</span>
-
-        <div className="flex gap-1">
-          <div className="w-3 h-3 rounded-sm bg-zinc-900"></div>
-          <div className="w-3 h-3 rounded-sm bg-zinc-700"></div>
-          <div className="w-3 h-3 rounded-sm bg-rose-900"></div>
-          <div className="w-3 h-3 rounded-sm bg-rose-700"></div>
-          <div className="w-3 h-3 rounded-sm bg-rose-500"></div>
-        </div>
-
-        <span>More</span>
       </div>
     </div>
   );
