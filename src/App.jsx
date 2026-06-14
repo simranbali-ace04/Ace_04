@@ -8,6 +8,8 @@ import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
 import Skills from "./components/Skills";
 import Quote from "./components/Quote";
+import GithubGraph from "./components/GithubGraph";
+
 
 const App = () => {
   return (
@@ -32,6 +34,7 @@ const App = () => {
           <Achievements />
           <Skills />
           <Quote />
+          <GithubGraph />
           </div>
         </div>
       </div>
