@@ -8,6 +8,9 @@ import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaJava } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 
 const skill = [
   {
@@ -47,6 +50,21 @@ const skill = [
     icon: <IoLogoVercel />,
   },
 ];
+const learning = [
+  {
+    name: "Node.js",
+    icon: <FaNodeJs />,
+  },
+  {
+    name: "Express.js",
+    icon: <SiExpress />,
+  },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb />,
+  },
+];
+
 const Skills = () => {
   return (
     <div className="relative z-10 rounded-xl border border-zinc-800 bg-black/50 text-white px-4 sm:px-6 lg:px-8 py-4 m-3">
@@ -57,12 +75,42 @@ const Skills = () => {
       <div className="flex flex-wrap  gap-2 items-center text-zinc-200">
         {skill.map((data, idx) => (
           <h1
+            key={idx}
             className="px-2 py-0.5 rounded-xl flex items-center border gap-0.5 font-normal active:scale-95 cursor-default
           hover:scale-105 hover:border-rose-500 hover:shadow-[0_0_12px_rgba(244,63,94,0.2)] transition-all duration-200"
           >
             {data.name} <span>{data.icon}</span>
           </h1>
         ))}
+      </div>
+      <div className="mt-6">
+        <div className="flex flex-wrap gap-2">
+          {learning.map((tech, idx) => (
+            <div
+              key={idx}
+              className="
+          px-1 py-0.5
+          rounded-xl
+          flex items-center gap-1.5
+          border border-zinc-700
+          text-zinc-300
+
+          transition-all duration-200
+          hover:scale-105
+          hover:border-rose-500
+          hover:shadow-[0_0_12px_rgba(244,63,94,0.2)]
+        "
+            >
+              <span>{tech.icon}</span>
+
+              <span>{tech.name}</span>
+
+              <span className="text-[10px] px-1.5 rounded-full bg-amber-500/10 text-amber-400">
+                Learning
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
