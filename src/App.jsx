@@ -32,7 +32,7 @@ const App = () => {
       >
         <Navbar />
         <div className="w-full sm:w-4/5 lg:w-3/5 rounded-2xl border border-zinc-400 dark:border-zinc-800 bg-zinc-50/20 dark:bg-black/45 backdrop-blur-xs overflow-hidden">
-          <div className="relative w-full h-50 sm:h-62.5 md:h-75">
+          <div className="relative w-full h-32 sm:h-48 md:h-64">
             <div
               className={`absolute inset-0 w-full h-full transition-opacity duration-300 ease-in-out ${
                 isDark ? "opacity-0 pointer-events-none" : "opacity-100"
