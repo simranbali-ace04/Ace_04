@@ -2,7 +2,8 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 const ProjectsCard = (props) => {
   return (
-    <div className="bg-black/50 backdrop:blur-md p-3.5 border border-zinc-500 sm:w-full rounded-2xl">
+    <div className="bg-white/40 dark:bg-zinc-950/40 backdrop-blur-xs p-4 border border-zinc-400 dark:border-zinc-800 sm:w-full rounded-2xl transition-colors duration-300">
+      {" "}
       <div className="flex items-center justify-between mb-2">
         <h1 className="font-semibold text-2xl sm:text-3xl ml-2.5 font-heading">
           {props.name}
@@ -10,7 +11,7 @@ const ProjectsCard = (props) => {
         <div className="flex flex-wrap gap-2 items-center">
           <a
             href={props.link}
-            className="flex items-center px-1.5 py-1 rounded-xl text-sm border font-light border-zinc-500 hover:bg-zinc-900"
+            className="flex items-center px-1.5 py-1 rounded-xl text-sm border border-zinc-500 dark:hover:bg-zinc-900 hover:bg-zinc-200"
           >
             live preview
             <span>
@@ -19,7 +20,7 @@ const ProjectsCard = (props) => {
           </a>
           <a
             href={props.github}
-            className="flex items-center px-1.5 py-1 rounded-xl text-sm border font-light border-zinc-500 hover:bg-zinc-900"
+            className="flex items-center px-1.5 py-1 rounded-xl text-sm border border-zinc-500 dark:hover:bg-zinc-900 hover:bg-zinc-200"
           >
             github{" "}
             <span>
@@ -28,7 +29,7 @@ const ProjectsCard = (props) => {
           </a>
         </div>
       </div>
-      <ul className="space-y-3 text-zinc-300 mb-2 font-normal">
+      <ul className="space-y-2.5 text-slate-700 dark:text-zinc-300 mb-3 font-normal leading-relaxed transition-colors duration-300">
         {props.description.map((data, idx) => (
           <li key={idx} className="flex gap-3">
             <span className="text-rose-500">▹</span>
@@ -36,8 +37,7 @@ const ProjectsCard = (props) => {
           </li>
         ))}
       </ul>
-
-      <div className="flex flex-wrap gap-2 p-2 px-2">
+      <div className="flex flex-wrap gap-2 pt-2">
         {props.techStack.map((tech, idx) => (
           <h1
             key={idx}
@@ -47,7 +47,6 @@ const ProjectsCard = (props) => {
           </h1>
         ))}
       </div>
-      
     </div>
   );
 };

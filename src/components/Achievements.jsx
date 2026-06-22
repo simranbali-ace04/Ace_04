@@ -40,15 +40,12 @@ const Achievements = () => {
   return (
     <div
       id="achievements"
-      className="relative z-10 rounded-xl border border-zinc-800 bg-black/50 text-white px-8 py-4 m-3"
-    >
+className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 text-slate-800 dark:text-white px-8 py-4 m-3 transition-colors duration-300"    >
       <div className="flex items-center justify-center gap-2">
-        <h1 className="text-3xl font-heading text-olive-300 mb-3">
-          ACHIEVEMENTS
+<h1 className="text-3xl font-heading text-rose-600 dark:text-olive-300 mb-3 transition-colors duration-300">          ACHIEVEMENTS
         </h1>
 
-        <div className="h-px flex-1 bg-linear-to-r from-zinc-700 to-transparent"></div>
-      </div>
+<div className="h-px flex-1 bg-linear-to-r from-zinc-400 to-transparent dark:from-zinc-700"></div>      </div>
 
       <div className="flex flex-col gap-4">
         {achievements.map((achievement, idx) => (

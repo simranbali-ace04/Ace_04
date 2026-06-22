@@ -1,6 +1,5 @@
 import React from 'react'
-import HeroDark from "../assets/HeroDark.png";
-import HeroLight from "../assets/HeroLight.png";
+import HeroDark from "../assets/HeroDark.webp";
 
 
 const HeroDarkImg = () => {

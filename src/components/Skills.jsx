@@ -67,12 +67,14 @@ const learning = [
 
 const Skills = () => {
   return (
-    <div className="relative z-10 rounded-xl border border-zinc-800 bg-black/50 text-white px-4 sm:px-6 lg:px-8 py-4 m-3">
+    <div className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 text-slate-700 dark:text-white px-4 sm:px-6 lg:px-8 py-4 m-3 transition-colors duration-300">
       <div className="flex items-center justify-center gap-2">
-        <h1 className="text-3xl font-heading text-olive-300 mb-3">SKILLS</h1>
+        <h1 className="text-3xl font-heading text-rose-600 dark:text-olive-300 mb-3 transition-colors duration-300">
+          SKILLS
+        </h1>
         <div className="h-px flex-1 bg-linear-to-r from-zinc-700 to-transparent text"></div>
       </div>
-      <div className="flex flex-wrap  gap-2 items-center text-zinc-200">
+      <div className="flex flex-wrap gap-2 items-center text-slate-700 dark:text-zinc-200 transition-colors duration-300">
         {skill.map((data, idx) => (
           <h1
             key={idx}
@@ -93,19 +95,20 @@ const Skills = () => {
           rounded-xl
           flex items-center gap-1.5
           border border-zinc-700
-          text-zinc-300
-          cursor-default
-          transition-all duration-200
-          hover:scale-105
-          hover:border-rose-500
-          hover:shadow-[0_0_12px_rgba(244,63,94,0.2)]
+          text-slate-700 dark:text-zinc-300
+            bg-white/40 dark:bg-zinc-950/40
+            cursor-default
+            transition-all duration-200
+            hover:scale-105
+            hover:border-rose-500
+            hover:shadow-[0_0_12px_rgba(244,63,94,0.2)]
         "
             >
               <span>{tech.icon}</span>
 
               <span>{tech.name}</span>
 
-              <span className="text-[10px] px-1.5 rounded-full bg-amber-500/10 text-amber-400">
+              <span className="text-[10px] px-1.5 rounded-full bg-amber-500/10 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 font-medium">
                 Learning
               </span>
             </div>
