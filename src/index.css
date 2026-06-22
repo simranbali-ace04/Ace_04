@@ -26,10 +26,12 @@ html.dark body {
   @apply bg-black text-white;
 }
 
-/* Force every container, card, and layout element to transition colors 
-   over the exact same 500ms window with a premium ease-in-out curve */
-div, button, h1, h2, p, span, a, svg {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+.relative, 
+.rounded-xl, 
+.rounded-2xl, 
+button, 
+a {
+  transition-property: background-color, border-color, color, fill;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
 }

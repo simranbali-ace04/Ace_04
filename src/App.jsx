@@ -31,8 +31,24 @@ const App = () => {
         className="relative z-10 flex flex-col justify-center items-center gap-5 p-2 min-h-screen"
       >
         <Navbar />
-        <div className="w-full sm:w-4/5 lg:w-3/5 rounded-2xl border border-zinc-400 dark:border-zinc-800 bg-zinc-50/20 dark:bg-black/45 backdrop-blur-xs">
-          {isDark ? <HeroDarkImg /> : <HeroLightImg />}
+        <div className="w-full sm:w-4/5 lg:w-3/5 rounded-2xl border border-zinc-400 dark:border-zinc-800 bg-zinc-50/20 dark:bg-black/45 backdrop-blur-xs overflow-hidden">
+          <div className="relative w-full h-50 sm:h-62.5 md:h-75">
+            <div
+              className={`absolute inset-0 w-full h-full transition-opacity duration-300 ease-in-out ${
+                isDarkMode ? "opacity-0 pointer-events-none" : "opacity-100"
+              }`}
+            >
+              <HeroLightImg />
+            </div>
+
+            <div
+              className={`absolute inset-0 w-full h-full transition-opacity duration-300 ease-in-out ${
+                isDarkMode ? "opacity-100" : "opacity-0 pointer-events-none"
+              }`}
+            >
+              <HeroDarkImg />
+            </div>
+          </div>
           <div className="flex flex-col gap-3">
             <Hero />
             <About />
