@@ -2,7 +2,7 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 const ProjectsCard = (props) => {
   return (
-    <div className="bg-white/40 dark:bg-zinc-950/40 backdrop-blur-xs p-4 border border-zinc-400 dark:border-zinc-800 sm:w-full rounded-2xl transition-colors duration-300">
+    <div className="bg-white/40 dark:bg-zinc-950/40 backdrop-blur-xs p-4 border border-zinc-400 dark:border-zinc-800 sm:w-full rounded-2xl transition-colors duration-300" style={{ willChange: 'background-color, border-color' }}>
       {" "}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-2">
         <h1 className="font-semibold text-2xl sm:text-3xl ml-2.5 font-heading">
@@ -29,7 +29,7 @@ const ProjectsCard = (props) => {
           </a>
         </div>
       </div>
-      <ul className="space-y-2.5 text-slate-700 dark:text-zinc-300 mb-3 font-normal leading-relaxed transition-colors duration-300">
+      <ul className="space-y-2.5 text-slate-700 dark:text-zinc-300 mb-3 font-normal leading-relaxed">
         {props.description.map((data, idx) => (
           <li key={idx} className="flex gap-3">
             <span className="text-rose-500">▹</span>

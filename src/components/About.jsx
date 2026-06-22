@@ -12,13 +12,13 @@ const About = () => {
   return (
     <div className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 dark:text-white transition-colors px-8 py-4 m-3">
       <div className="flex items-center justify-center gap-2">
-        <h1 className="text-3xl font-heading text-rose-600 dark:text-olive-300 transition-colors duration-300">
+        <h1 className="text-3xl font-heading text-rose-600 dark:text-olive-300">
           ABOUT
         </h1>
         <div className="h-px flex-1 bg-linear-to-r from-zinc-400 to-transparent dark:from-zinc-700"></div>
       </div>
 
-      <div className="text-md m-4 flex flex-col gap-3 text-slate-800 dark:text-olive-200 transition-colors duration-300">
+      <div className="text-md m-4 flex flex-col gap-3 text-slate-800 dark:text-olive-200">
         <h1>
           I'm{" "}
           <span className="text-rose-600 dark:text-rose-500">Simran Bali</span>{" "}
@@ -42,9 +42,9 @@ const About = () => {
           my next big goal.
         </h1>
       </div>
-      <div className="mt-6 border-t border-zinc-300 dark:border-zinc-800 pt-5 transition-colors duration-300">
+      <div className="mt-6 border-t border-zinc-300 dark:border-zinc-800 pt-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          <div className="flex items-center gap-3 lg:border-r border-zinc-300 dark:border-zinc-800 lg:pr-6 transition-colors duration-300">
+          <div className="flex items-center gap-3 lg:border-r border-zinc-300 dark:border-zinc-800 lg:pr-6">
             <HiOutlineAcademicCap
               size={24}
               className="text-rose-600 dark:text-rose-500 shrink-0"
@@ -54,7 +54,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-3 lg:border-r border-zinc-300 dark:border-zinc-800 lg:pr-6 transition-colors duration-300">
+          <div className="flex items-center gap-3 lg:border-r border-zinc-300 dark:border-zinc-800 lg:pr-6">
             <HiOutlineCode
               size={24}
               className="text-rose-600 dark:text-rose-500 shrink-0"
@@ -64,7 +64,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-3 lg:border-r border-zinc-300 dark:border-zinc-800 lg:pr-6 transition-colors duration-300">
+          <div className="flex items-center gap-3 lg:border-r border-zinc-300 dark:border-zinc-800 lg:pr-6">
             <HiOutlineUserGroup
               size={24}
               className="text-rose-600 dark:text-rose-500 shrink-0"
@@ -74,7 +74,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-3 lg:border-r border-zinc-300 dark:border-zinc-800 lg:pr-6 transition-colors duration-300">
+          <div className="flex items-center gap-3 lg:border-r border-zinc-300 dark:border-zinc-800 lg:pr-6">
             <PiLightningBold
               size={24}
               className="text-rose-600 dark:text-rose-500 shrink-0"

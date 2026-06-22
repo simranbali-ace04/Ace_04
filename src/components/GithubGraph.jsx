@@ -10,14 +10,14 @@ const GithubGraph = () => {
       className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 text-slate-700 dark:text-white px-4 sm:px-6 lg:px-8 py-4 m-3 transition-colors duration-300"
     >
       <div className="flex items-center gap-2 mb-4">
-        <h1 className="text-2xl sm:text-3xl font-heading text-rose-600 dark:text-olive-300 transition-colors duration-300">
+        <h1 className="text-2xl sm:text-3xl font-heading text-rose-600 dark:text-olive-300">
           GITHUB
           </h1>
 
         <div className="h-px flex-1 bg-linear-to-r from-zinc-700 to-transparent"></div>
       </div>
 
-      <p className="text-xs sm:text-sm text-slate-700 dark:text-zinc-400 mb-6 transition-colors duration-300">
+      <p className="text-xs sm:text-sm text-slate-700 dark:text-zinc-400 mb-6">
         Building consistently, one commit at a time.
       </p>
 

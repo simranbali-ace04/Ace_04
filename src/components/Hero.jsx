@@ -41,7 +41,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col gap-3 text-center sm:text-left w-full min-w-0">
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl text-rose-600 dark:text-olive-300 sm:mt-4 font-semibold leading-tight font-heading transition-colors duration-300">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl text-rose-600 dark:text-olive-300 sm:mt-4 font-semibold leading-tight font-heading">
             Simran Bali{" "}
             <span className="text-lg sm:text-2xl text-zinc-600 dark:text-zinc-400 italic block sm:inline">
               aka Ace
@@ -49,7 +49,7 @@ const Hero = () => {
           </h1>
 
           <div className="flex flex-col sm:flex-row items-center sm:items-center gap-1">
-            <span className="text-rose-600 dark:text-olive-300 text-md sm:text-base sm:px-7 transition-colors duration-300">
+            <span className="text-rose-600 dark:text-olive-300 text-md sm:text-base sm:px-7">
               20, she/her
             </span>
             <TextType
@@ -68,7 +68,7 @@ const Hero = () => {
             />
           </div>
 
-          <p className="text-slate-700 dark:text-zinc-300 text-sm sm:text-base transition-colors duration-300">
+          <p className="text-slate-700 dark:text-zinc-300 text-sm sm:text-base">
             Turning curiosity into code and ideas into impactful digital
             experiences. Always learning, always building, and always chasing
             the next challenge.
@@ -88,6 +88,7 @@ const Hero = () => {
                 href="https://github.com/simranbali-ace04"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="GitHub Profile"
                 className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125 transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
               >
                 <FaGithub size={22} />
@@ -96,6 +97,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/simran-bali-341a5a31b"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="LinkedIn Profile"
                 className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125 transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
               >
                 <FaLinkedin size={22} />
@@ -104,12 +106,14 @@ const Hero = () => {
                 href="https://x.com/ace_X04"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="X Profile"
                 className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125 transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
               >
                 <FaXTwitter size={22} />
               </a>
               <a
                 href="mailto:simranbali2006@gmail.com"
+                aria-label="Send Email"
                 className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125 transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
               >
                 <MdEmail size={24} />

@@ -20,10 +20,10 @@ const Contact = () => {
         
         <div className="lg:col-span-7 flex flex-col justify-between">
           <div>
-            <h2 className="text-4xl sm:text-5xl font-heading text-rose-600 dark:text-olive-300 tracking-tight transition-colors duration-300">
+            <h2 className="text-4xl sm:text-5xl font-heading text-rose-600 dark:text-olive-300 tracking-tight">
               Let's Connect.
             </h2>
-            <div className="mt-4 mb-3 space-y-4 text-slate-700 dark:text-zinc-300 text-sm sm:text-base leading-relaxed transition-colors duration-300">
+            <div className="mt-4 mb-3 space-y-4 text-slate-700 dark:text-zinc-300 text-sm sm:text-base leading-relaxed">
               <p>
                 I'm always excited to meet people who love building, learning, and
                 creating meaningful things with technology. Whether it's hackathons,
@@ -35,7 +35,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="mt-8 lg:mt-0 p-4 rounded-xl border border-rose-100 bg-rose-50/30 dark:border-rose-950/40 dark:bg-rose-950/10 transition-colors duration-300">
+          <div className="mt-8 lg:mt-0 p-4 rounded-xl border border-rose-100 bg-rose-50/30 dark:border-rose-950/40 dark:bg-rose-950/10">
             <div className="flex items-center gap-2 text-rose-600 dark:text-rose-400 text-xs uppercase tracking-wider font-semibold mb-1">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
@@ -43,19 +43,20 @@ const Contact = () => {
               </span>
               Availability Status
             </div>
-            <p className="text-slate-700 dark:text-zinc-300 text-xs sm:text-sm transition-colors duration-300">
+            <p className="text-slate-700 dark:text-zinc-300 text-xs sm:text-sm">
               Open to collaborations, hackathons, projects, internships, and interesting opportunities.
             </p>
           </div>
         </div>
 
-        <div className="lg:col-span-5 flex flex-col justify-center divide-y divide-zinc-200 dark:divide-zinc-800 transition-colors duration-300">
+        <div className="lg:col-span-5 flex flex-col justify-center divide-y divide-zinc-200 dark:divide-zinc-800">
           {socialLinks.map((link, idx) => (
             <a
               key={idx}
               href={link.href}
               target={link.name !== "Email" ? "_blank" : undefined}
               rel="noreferrer"
+              aria-label={link.name === "Email" ? "Send Email" : `${link.name} Profile`}
               className="group flex items-center justify-between py-4 text-slate-700 dark:text-zinc-300 hover:text-rose-600 dark:hover:text-rose-400 font-normal transition-all duration-300"
             >
               <div className="flex items-center gap-4">

@@ -9,7 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Clear out any view-transition leftovers */
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
@@ -17,21 +16,32 @@ html {
 
 @variant dark (&:where(.dark, .dark *));
 
-/* Synchronized Core Foundation */
+/* Step 1: Eliminate reflow delay — text snaps instantly */
+h1, h2, p, span, li, a, svg {
+  transition: none !important;
+}
+
+/* Step 2: Hardware-accelerated body */
 body {
-  @apply bg-white text-zinc-900 transition-colors duration-500 ease-in-out;
+  @apply bg-white text-zinc-900;
+  transition: background-color 200ms ease-in-out;
+  will-change: background-color;
 }
 
 html.dark body {
   @apply bg-black text-white;
 }
 
-.relative, 
-.rounded-xl, 
-.rounded-2xl, 
-button, 
-a {
-  transition-property: background-color, border-color, color, fill;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+body,
+.w-full.rounded-2xl {
+  transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+/* Step 2: Hardware-accelerated section wrappers */
+#projects,
+#achievements,
+#skills,
+#contact,
+#github {
+  will-change: background-color, border-color;
 }
