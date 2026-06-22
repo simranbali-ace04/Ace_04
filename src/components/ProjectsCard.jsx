@@ -4,14 +4,14 @@ const ProjectsCard = (props) => {
   return (
     <div className="bg-white/40 dark:bg-zinc-950/40 backdrop-blur-xs p-4 border border-zinc-400 dark:border-zinc-800 sm:w-full rounded-2xl transition-colors duration-300">
       {" "}
-      <div className="flex items-center justify-between mb-2">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-2">
         <h1 className="font-semibold text-2xl sm:text-3xl ml-2.5 font-heading">
           {props.name}
         </h1>
-        <div className="flex flex-wrap gap-2 items-center">
+        <div className="flex gap-2 items-center shrink-0">
           <a
             href={props.link}
-            className="flex items-center px-1.5 py-1 rounded-xl text-sm border border-zinc-500 dark:hover:bg-zinc-900 hover:bg-zinc-200"
+            className="flex items-center whitespace-nowrap px-1.5 py-1 rounded-xl text-sm border border-zinc-500 dark:hover:bg-zinc-900 hover:bg-zinc-200"
           >
             live preview
             <span>
@@ -20,7 +20,7 @@ const ProjectsCard = (props) => {
           </a>
           <a
             href={props.github}
-            className="flex items-center px-1.5 py-1 rounded-xl text-sm border border-zinc-500 dark:hover:bg-zinc-900 hover:bg-zinc-200"
+            className="flex items-center whitespace-nowrap px-1.5 py-1 rounded-xl text-sm border border-zinc-500 dark:hover:bg-zinc-900 hover:bg-zinc-200"
           >
             github{" "}
             <span>
