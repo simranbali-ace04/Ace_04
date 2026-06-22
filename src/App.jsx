@@ -35,7 +35,7 @@ const App = () => {
           <div className="relative w-full h-50 sm:h-62.5 md:h-75">
             <div
               className={`absolute inset-0 w-full h-full transition-opacity duration-300 ease-in-out ${
-                isDarkMode ? "opacity-0 pointer-events-none" : "opacity-100"
+                isDark ? "opacity-0 pointer-events-none" : "opacity-100"
               }`}
             >
               <HeroLightImg />
@@ -43,7 +43,7 @@ const App = () => {
 
             <div
               className={`absolute inset-0 w-full h-full transition-opacity duration-300 ease-in-out ${
-                isDarkMode ? "opacity-100" : "opacity-0 pointer-events-none"
+                isDark ? "opacity-100" : "opacity-0 pointer-events-none"
               }`}
             >
               <HeroDarkImg />
