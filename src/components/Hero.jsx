@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
-  const {isDark} = useTheme();
+  const { isDark } = useTheme();
   return (
     <div className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 dark:text-white transition-colors px-8 py-4 m-3">
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-10 mb-6">
@@ -70,14 +70,19 @@ const Hero = () => {
 
           <p className="text-slate-700 dark:text-zinc-300 text-sm sm:text-base transition-colors duration-300">
             Turning curiosity into code and ideas into impactful digital
-            experiences.
-            Always learning, always building, and always chasing the next challenge.
+            experiences. Always learning, always building, and always chasing
+            the next challenge.
           </p>
 
           <div className="flex flex-row flex-wrap gap-4 items-center justify-center sm:justify-start">
-            <button className="bg-rose-600 dark:bg-rose-800 text-white px-4 py-1.5 rounded-md font-medium flex items-center gap-1 active:scale-95 hover:bg-rose-500 dark:hover:bg-rose-600 text-sm transition-all duration-200 cursor-pointer">
+            <a
+              href="https://drive.google.com/file/d/1gYcVtIPOoy-GELoQ0JUL7rTkKUhCL2NA/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-rose-600 dark:bg-rose-800 text-white px-4 py-1.5 rounded-md font-medium flex items-center gap-1 active:scale-95 hover:bg-rose-500 dark:hover:bg-rose-600 text-sm transition-all duration-200 cursor-pointer"
+            >
               Resume <IoDocumentTextOutline size={15} />
-            </button>
+            </a>
             <div className="flex items-center gap-5">
               <a
                 href="https://github.com/simranbali-ace04"
