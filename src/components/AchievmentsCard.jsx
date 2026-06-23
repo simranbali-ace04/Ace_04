@@ -2,7 +2,7 @@ import React from "react";
 
 const AchievementCard = ({ title, organization, description }) => {
   return (
-    <div className="bg-white/40 dark:bg-zinc-950/40 backdrop-blur-xs p-4 border border-zinc-300 dark:border-zinc-800 rounded-2xl font-normal transition-colors duration-300" style={{ willChange: 'background-color, border-color' }}>
+    <div className="bg-white/40 dark:bg-zinc-950/40 backdrop-blur-xs p-4 border border-zinc-300 dark:border-zinc-800 rounded-2xl font-normal" style={{ willChange: 'background-color, border-color' }}>
       {" "}
       <h1 className="font-heading text-xl sm:text-2xl font-semibold">
         {title}

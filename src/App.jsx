@@ -16,7 +16,7 @@ import HeroLightImg from "./components/HeroLightImg";
 const App = () => {
   const { isDark } = useTheme();
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-zinc-900 dark:text-white transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-black text-zinc-900 dark:text-white">
       <div className="fixed inset-0 z-0 bg-white dark:bg-black">
         <ShapeGrid
           shape="hexagon"
@@ -34,7 +34,7 @@ const App = () => {
         <div className="w-full sm:w-4/5 lg:w-3/5 rounded-2xl border border-zinc-400 dark:border-zinc-800 bg-zinc-50/20 dark:bg-black/45 backdrop-blur-xs overflow-hidden">
           <div className="relative w-full h-32 sm:h-48 md:h-64">
             <div
-              className={`absolute inset-0 w-full h-full transition-opacity duration-300 ease-in-out ${
+              className={`absolute inset-0 w-full h-full transition-opacity ease-in-out ${
                 isDark ? "opacity-0 pointer-events-none" : "opacity-100"
               }`}
             >
@@ -42,7 +42,7 @@ const App = () => {
             </div>
 
             <div
-              className={`absolute inset-0 w-full h-full transition-opacity duration-300 ease-in-out ${
+              className={`absolute inset-0 w-full h-full transition-opacity ease-in-out ${
                 isDark ? "opacity-100" : "opacity-0 pointer-events-none"
               }`}
             >

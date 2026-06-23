@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 text-slate-800 dark:text-white px-6 sm:px-10 py-10 m-3 transition-colors duration-300"
+      className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 text-slate-800 dark:text-white px-6 sm:px-10 py-10 m-3"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
         
@@ -57,16 +57,16 @@ const Contact = () => {
               target={link.name !== "Email" ? "_blank" : undefined}
               rel="noreferrer"
               aria-label={link.name === "Email" ? "Send Email" : `${link.name} Profile`}
-              className="group flex items-center justify-between py-4 text-slate-700 dark:text-zinc-300 hover:text-rose-600 dark:hover:text-rose-400 font-normal transition-all duration-300"
+              className="group flex items-center justify-between py-4 text-slate-700 dark:text-zinc-300 hover:text-rose-600 dark:hover:text-rose-400 font-normal "
             >
               <div className="flex items-center gap-4">
-                <span className="text-zinc-400 group-hover:text-rose-600 dark:group-hover:text-rose-400 group-hover:scale-110 transition-all duration-300">
+                <span className="text-zinc-400 group-hover:text-rose-600 dark:group-hover:text-rose-400 group-hover:scale-110">
                   {link.icon}
                 </span>
                 <span className="text-base sm:text-lg tracking-wide">{link.name}</span>
               </div>
               
-              <span className="text-zinc-400 group-hover:text-rose-600 dark:group-hover:text-rose-400 -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">
+              <span className="text-zinc-400 group-hover:text-rose-600 dark:group-hover:text-rose-400 -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100">
                 <MdArrowOutward size={20} />
               </span>
             </a>

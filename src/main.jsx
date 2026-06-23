@@ -3,6 +3,16 @@ import "./index.css";
 import App from "./App.jsx";
 import { ThemeProvider } from "./ThemeContext";
 
+import Lenis from "lenis";
+import "lenis/dist/lenis.css";
+
+const lenis = new Lenis({
+  autoRaf: true,
+  smoothWheel: true,
+  lerp: 0.08,
+  anchors: true,
+});
+
 createRoot(document.getElementById("root")).render(
   <ThemeProvider>
     <App />

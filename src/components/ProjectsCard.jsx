@@ -2,7 +2,7 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 const ProjectsCard = (props) => {
   return (
-    <div className="bg-white/40 dark:bg-zinc-950/40 backdrop-blur-xs p-4 border border-zinc-400 dark:border-zinc-800 sm:w-full rounded-2xl transition-colors duration-300" style={{ willChange: 'background-color, border-color' }}>
+    <div className="bg-white/40 dark:bg-zinc-950/40 backdrop-blur-xs p-4 border border-zinc-400 dark:border-zinc-800 sm:w-full rounded-2xl" style={{ willChange: 'background-color, border-color' }}>
       {" "}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-2">
         <h1 className="font-semibold text-2xl sm:text-3xl ml-2.5 font-heading">

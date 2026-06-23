@@ -10,15 +10,7 @@ export const ThemeProvider = ({ children }) => {
 };
 
   useEffect(() => {
-    
-    if (typeof window !== 'undefined') {
-      const root = window.document.documentElement;
-      if (isDark) {
-        root.classList.add('dark');
-      } else {
-        root.classList.remove('dark');
-      }
-    }
+    window.document.documentElement.classList.toggle('dark', isDark);
   }, [isDark]); 
   
   return (

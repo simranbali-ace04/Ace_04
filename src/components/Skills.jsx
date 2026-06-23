@@ -67,7 +67,7 @@ const learning = [
 
 const Skills = () => {
   return (
-    <div id="skills" className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 text-slate-700 dark:text-white px-4 sm:px-6 lg:px-8 py-4 m-3 transition-colors duration-300">
+    <div id="skills" className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 text-slate-700 dark:text-white px-4 sm:px-6 lg:px-8 py-4 m-3">
       <div className="flex items-center justify-center gap-2">
         <h1 className="text-3xl font-heading text-rose-600 dark:text-olive-300 mb-3">
           SKILLS
@@ -79,7 +79,7 @@ const Skills = () => {
           <h1
             key={idx}
             className="px-2 py-0.5 rounded-xl flex items-center border gap-0.5 font-normal active:scale-95 cursor-default
-          hover:scale-105 hover:border-rose-500 hover:shadow-[0_0_12px_rgba(244,63,94,0.2)] transition-all duration-200"
+          hover:scale-105 hover:border-rose-500 hover:shadow-[0_0_12px_rgba(244,63,94,0.2)] duration-200"
           >
             {data.name} <span>{data.icon}</span>
           </h1>
@@ -98,7 +98,7 @@ const Skills = () => {
           text-slate-700 dark:text-zinc-300
             bg-white/40 dark:bg-zinc-950/40
             cursor-default
-            transition-all duration-200
+            duration-200
             hover:scale-105
             hover:border-rose-500
             hover:shadow-[0_0_12px_rgba(244,63,94,0.2)]

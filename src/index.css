@@ -17,31 +17,12 @@ html {
 @variant dark (&:where(.dark, .dark *));
 
 /* Step 1: Eliminate reflow delay — text snaps instantly */
-h1, h2, p, span, li, a, svg {
+h1, h2, p, span, li, a, svg, button {
   transition: none !important;
 }
 
-/* Step 2: Hardware-accelerated body */
-body {
-  @apply bg-white text-zinc-900;
-  transition: background-color 200ms ease-in-out;
-  will-change: background-color;
-}
-
-html.dark body {
-  @apply bg-black text-white;
-}
-
-body,
-.w-full.rounded-2xl {
-  transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out, color 200ms ease-in-out;
-}
-
-/* Step 2: Hardware-accelerated section wrappers */
-#projects,
-#achievements,
-#skills,
-#contact,
-#github {
+/* Step 2: Compositor hardware-accelerated unified block */
+body, #projects, #achievements, #skills, #contact, nav, .bg-white\/40, .dark\:bg-zinc-950\/40 {
   will-change: background-color, border-color;
+  transition: background-color 150ms cubic-bezier(0.2, 0.8, 0.2, 1), border-color 150ms cubic-bezier(0.2, 0.8, 0.2, 1) !important;
 }

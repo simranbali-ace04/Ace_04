@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 const Hero = () => {
   const { isDark } = useTheme();
   return (
-    <div className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 dark:text-white transition-colors px-8 py-4 m-3">
+    <div className="relative z-10 rounded-xl border border-zinc-400 bg-zinc-50/70 dark:border-zinc-800 dark:bg-black/50 dark:text-white px-8 py-4 m-3">
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-10 mb-6">
         <div className="flex flex-col items-center sm:items-start shrink-0 w-full sm:w-auto">
           <ShinyText
@@ -79,7 +79,7 @@ const Hero = () => {
               href="https://drive.google.com/file/d/1gYcVtIPOoy-GELoQ0JUL7rTkKUhCL2NA/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className="bg-rose-600 dark:bg-rose-800 text-white px-4 py-1.5 rounded-md font-medium flex items-center gap-1 active:scale-95 hover:bg-rose-500 dark:hover:bg-rose-600 text-sm transition-all duration-200 cursor-pointer"
+              className="bg-rose-600 dark:bg-rose-800 text-white px-4 py-1.5 rounded-md font-medium flex items-center gap-1 active:scale-95 hover:bg-rose-500 dark:hover:bg-rose-600 text-sm cursor-pointer"
             >
               Resume <IoDocumentTextOutline size={15} />
             </a>
@@ -89,7 +89,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub Profile"
-                className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125 transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
+                className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125  hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
               >
                 <FaGithub size={22} />
               </a>
@@ -98,7 +98,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn Profile"
-                className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125 transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
+                className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125  hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
               >
                 <FaLinkedin size={22} />
               </a>
@@ -107,14 +107,14 @@ const Hero = () => {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="X Profile"
-                className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125 transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
+                className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125  hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
               >
                 <FaXTwitter size={22} />
               </a>
               <a
                 href="mailto:simranbali2006@gmail.com"
                 aria-label="Send Email"
-                className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125 transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
+                className="text-zinc-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white hover:scale-125  hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
               >
                 <MdEmail size={24} />
               </a>
