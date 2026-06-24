@@ -21,7 +21,7 @@ const App = () => {
         <ShapeGrid
           shape="hexagon"
           speed={0.2}
-          squareSize={5}
+          squareSize={12}
           borderColor={isDark ? "#212020" : "#EFDDE0"}
           direction="diagonal"
         />
