@@ -12,17 +12,31 @@ const projects = [
     ],
     techStack: ["React", "Tailwind CSS", "REST API"],
     link: "https://gitlook-ace.vercel.app",
+    buttonText: "live preview",
     github: "https://github.com/simranbali-ace04/GitLook",
+  },
+  {
+    name: "Leafy",
+    description: [
+      "Built a VS Code extension that gamifies coding sessions by growing a virtual garden based on developer activity and coding time.",
+      "Implemented persistent state management using the VS Code Extension API to track garden progress, unlock collectibles, and maintain user data across sessions.",
+      "Packaged and released the extension through GitHub Releases, enabling installation via downloadable builds while preparing for publication on the VS Code Marketplace.",
+    ],
+    techStack: ["JavaScript", "VS Code API", "Node.js", "HTML", "CSS"],
+    link: "https://github.com/simranbali-ace04/Leafy/releases",
+    buttonText: "download",
+    github: "https://github.com/simranbali-ace04/Leafy",
   },
   {
     name: "VaultWise",
     description: [
       "Built a responsive password vault interface using React and Vite to help users securely organize and view account credentials.",
-      " Structured the UI using localized sub-components like newCredentials and passwordCard to separate entry forms from the credential list displays.",
+      "Structured the UI using localized sub-components like newCredentials and passwordCard to separate entry forms from the credential list displays.",
       "Utilized Tailwind CSS to implement utility-first layouts, ensuring a consistent user experience across mobile and desktop devices.",
     ],
     techStack: ["React", "Tailwind CSS", "Local Storage"],
     link: "https://vault-wise-ace.vercel.app/",
+    buttonText: "live preview",
     github: "https://github.com/simranbali-ace04/VaultWise",
   },
   {
@@ -34,6 +48,7 @@ const projects = [
     ],
     techStack: ["Next.js", "Gemini API", "Supabase", "Tailwind CSS", "Node.js"],
     link: "https://consentlens-xi.vercel.app/",
+    buttonText: "live preview",
     github: "https://github.com/simranbali-ace04/consentlens",
   },
 ];
@@ -58,6 +73,7 @@ const Projects = () => {
             description={project.description}
             techStack={project.techStack}
             link={project.link}
+            buttonText={project.buttonText}
             github={project.github}
           />
         ))}

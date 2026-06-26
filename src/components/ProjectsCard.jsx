@@ -13,7 +13,7 @@ const ProjectsCard = (props) => {
             href={props.link}
             className="flex items-center whitespace-nowrap px-1.5 py-1 rounded-xl text-sm border border-zinc-500 dark:hover:bg-zinc-900 hover:bg-zinc-200"
           >
-            live preview
+            {props.buttonText}
             <span>
               <MdArrowOutward />
             </span>
